@@ -1,4 +1,8 @@
 from imports import *
 
-class Commands(Base):
-    pass
+class Commands:
+
+    @staticmethod
+    def usernameCheck(username):
+        jsonData = Http.get_request(url=endpoints['username'] + str(username))
+        return jsonData

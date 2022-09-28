@@ -1,3 +1,4 @@
+import random
 from base import *
 from commands import *
 from endpoints import *
